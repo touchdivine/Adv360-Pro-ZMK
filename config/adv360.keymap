@@ -54,11 +54,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2      &kp N3     &kp N4         &kp N5     &trans                                                            &mo 3      &kp N6          &kp KP_NUM      &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &vim_quit  &vim_write  &kp LC(C)  &kp R          &kp T      &none                                                             &kp MINUS  &kp TAB         &kp BACKSPACE   &kp EQUAL     &kp PLUS       &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S       &kp D      &kp LC(SPACE)  &kp LC(A)  &kp LC(B)        &kp LCTRL    &kp LALT      &kp LGUI   &kp RCTRL  &kp UNDER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X       &kp C      &kp V          &kp B                                    &kp HOME      &kp PG_UP                        &kp EXCL        &kp AMPS        &kp GRAVE     &kp TILDE      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS    &kp LEFT   &kp RIGHT                 &lt 1 BACKSPACE  &lt 2 SPACE  &kp END       &kp PG_DN  &kp ENTER  &kp RET                    &kp UP          &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL  &kp N1     &kp N2      &kp N3        &kp N4           &kp N5     &trans                                                            &mo 3      &kp N6          &kp KP_NUM      &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &vim_quit  &vim_write  &kp LC(C)     &kp R            &kp T      &none                                                             &kp MINUS  &kp TAB         &kp BACKSPACE   &kp EQUAL     &kp PLUS       &kp KP_MINUS     &kp BSLH
+&kp ESC    &kp A      &kp S       &kp D         &kp LC(SPACE)    &kp LC(A)  &kp LC(B)        &kp LCTRL    &kp LALT      &kp LGUI   &kp RCTRL  &kp UNDER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp Z      &kp X       &kp C         &kp V            &kp B                                    &kp HOME      &kp PG_UP                        &kp EXCL        &kp AMPS        &kp GRAVE     &kp TILDE      &kp KP_ENTER     &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS    &kp C_VOL_DN  &kp C_VOLUME_UP             &lt 1 BACKSPACE  &lt 2 SPACE  &kp END       &kp PG_DN  &kp ENTER  &kp RET                    &kp UP          &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
             >;
         };
 
@@ -84,24 +84,44 @@
             >;
         };
 
-        extra1 {
-            display-name = "Red";
-            status = "reserved";
+        red {
+            bindings = <
+&trans  &trans  &trans        &trans        &trans        &trans  &trans                                      &trans  &trans  &trans           &trans             &trans      &trans  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans                                      &trans  &trans  &trans           &trans             &trans      &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans           &trans             &trans      &trans  &trans
+&trans  &trans  &kp N7        &kp N8        &kp N9        &kp N0                  &trans      &trans                  &trans  &trans           &trans             &trans      &trans  &trans
+&trans  &trans  &trans        &trans        &trans                &trans  &trans  &trans      &trans  &trans  &trans          &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &trans  &trans
+            >;
         };
 
-        extra2 {
-            display-name = "Purple";
-            status = "reserved";
+        purple {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
-        extra3 {
-            display-name = "Cyan";
-            status = "reserved";
+        cyan {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
-        extra4 {
-            display-name = "Yellow";
-            status = "reserved";
+        yellow {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
